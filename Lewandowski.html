@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondos</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    padding-top: 60px;
+    background: #001f3f;
+    font-family: system-ui;
+  }
+  
+  .regresar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #001f3f;
+    z-index: 10;
+    padding: 10px;
+  }
+  
+  .regresar a{
+    color: #ffc72c;
+    text-decoration: none;
+  }
+  .fondo{
+    position:relative;
+  }
+  .descargar{
+    position: absolute;
+    bottom: 8px;
+    right:8px;
+    background: rgba(0,0,0,0.7);
+    color: #ffc72c;
+    border:none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    cursor:pointer;
+    z-index: 5;
+  }
+  
+  .material-symbols-outlined {
+    font-size:28px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+  .imagenes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en cel */
+    padding: 15px;
+    gap: 12px;
+  }
+  
+  .fondo img{
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #a50044;
+    cursor: pointer;
+    display: block;
+  }
+
+ 
+  @media (min-width: 768px) {
+    .imagenes{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  #toast{
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  color: white; 
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 9999;
+}
+#toast.mostrar{
+  opacity: 1;
+}
+  </style>
+</head>
+<body>
+  <div id="toast"> Fondo Descargado:)</div>
+  <div class="regresar">
+    <a href="index.html">
+      <span class="material-symbols-outlined"> arrow_back</span>
+    </a>
+  </div>
+  
+  <div class="imagenes">
+    <div class="fondo">
+      <img src="Lewandowski/fondo1.jpg">
+      <button class="descargar" onclick="descargar('Lewandowski/fondo1.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+    </div>
+    
+    <div class="fondo">
+      <img src="Lewandowski/fondo2.jpg">
+      <button class="descargar" onclick="descargar('Lewandowski/fondo2.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+    </div>
+    
+    <div class="fondo">
+      <img src="Lewandowski/fondo3.jpg">
+      <button class="descargar" onclick="descargar('Lewandowski/fondo3.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+    </div>
+    
+    <div class="fondo">
+      <img src="Lewandowski/fondo4.jpg">
+      <button class="descargar" onclick="descargar('Lewandowski/fondo4.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+    </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo5.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo5.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo6.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo6.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo7.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo7.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo8.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo8.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo9.jpg" loading="lazy">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo9.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+    
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo10.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo10.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo11.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo11.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo12.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo12.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo13.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo13.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo14.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo14.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo15.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo15.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+ 
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo16.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo16.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo17.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo17.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo18.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo18.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo19.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo19.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+ 
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo20.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo20.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo21.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo21.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo22.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo22.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo23.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo23.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo24.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo24.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo25.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo25.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo26.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo26.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo27.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo27.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo28.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo28.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo29.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo29.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo30.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo30.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo31.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo31.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo32.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo32.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo33.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo33.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo34.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo34.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo35.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo35.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo36.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo36.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo37.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo37.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+ 
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo38.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo38.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo39.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo39.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo40.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo40.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo41.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo41.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo42.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo42.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo43.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo43.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo44.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo44.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo45.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo45.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo46.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo46.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo47.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo47.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo48.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo48.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  <div class="fondo">
+    <img src="Lewandowski/fondo49.jpg">
+    <button class="descargar" onclick="descargar('Lewandowski/fondo49.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+   <div class="fondo">
+     <img src="Lewandowski/fondo50.jpg">
+     <button class="descargar" onclick="descargar('Lewandowski/fondo50.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+   </div>
+ 
+ </div>
+  
+  <script>
+function descargar(ruta) {
+  
+  const toast = document.getElementById('toast');
+  toast.classList.add('mostrar');
+
+ 
+  const a = document.createElement('a');
+  a.href = ruta;
+  a.download = ruta.split('/').pop();
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+
+ 
+  setTimeout(() => {
+    toast.classList.remove('mostrar');
+  }, 3000);
+}
+</script>
+</body>
+</html>

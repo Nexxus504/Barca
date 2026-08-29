@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondos Dani Olmo</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body{ padding-top: 60px; background: #001f3f; font-family: system-ui; }
+    .regresar{ position: fixed; top: 0; left: 0; width: 100%; background: #001f3f; z-index: 10; padding: 10px; }
+    .regresar a{ color: #ffc72c; text-decoration: none; }
+    .fondo{ position:relative; }
+    .descargar{ position: absolute; bottom: 8px; right:8px; background: rgba(0,0,0,0.7); color: #ffc72c; border:none; border-radius: 50%; width: 40px; height: 40px; display:flex; align-items: center; justify-content:center; cursor:pointer; z-index: 5; }
+    .material-symbols-outlined { font-size:28px; font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
+    .imagenes{ display: grid; grid-template-columns: repeat(2, 1fr); padding: 15px; gap: 12px; }
+    .fondo img{ width: 100%; height: 200px; object-fit: cover; border-radius: 15px; border: 2px solid #a50044; cursor: pointer; display: block; }
+    @media (min-width: 768px) { .imagenes{ grid-template-columns: repeat(4, 1fr); } }
+    #toast{ position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.7); color: white; padding: 12px 20px; border-radius: 12px; font-size: 18px; opacity: 0; transition: opacity 0.3s; z-index: 9999; }
+    #toast.mostrar{ opacity: 1; }
+  </style>
+</head>
+<body>
+  <div id="toast"> Fondo Descargado:)</div>
+  <div class="regresar">
+    <a href="index.html">
+      <span class="material-symbols-outlined"> arrow_back</span>
+    </a>
+  </div>
+  
+  <div class="imagenes">
+    <!-- DANI OLMO 1 AL 50 -->
+    <div class="fondo"><img src="Olmo/1.jpg"><button class="descargar" onclick="descargar('Olmo/1.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/2.jpg"><button class="descargar" onclick="descargar('Olmo/2.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/3.jpg"><button class="descargar" onclick="descargar('Olmo/3.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/4.jpg"><button class="descargar" onclick="descargar('Olmo/4.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/5.jpg"><button class="descargar" onclick="descargar('Olmo/5.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/6.jpg"><button class="descargar" onclick="descargar('Olmo/6.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/7.jpg"><button class="descargar" onclick="descargar('Olmo/7.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/8.jpg"><button class="descargar" onclick="descargar('Olmo/8.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/9.jpg"><button class="descargar" onclick="descargar('Olmo/9.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/10.jpg"><button class="descargar" onclick="descargar('Olmo/10.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/11.jpg"><button class="descargar" onclick="descargar('Olmo/11.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/12.jpg"><button class="descargar" onclick="descargar('Olmo/12.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/13.jpg"><button class="descargar" onclick="descargar('Olmo/13.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/14.jpg"><button class="descargar" onclick="descargar('Olmo/14.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/15.jpg"><button class="descargar" onclick="descargar('Olmo/15.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/16.jpg"><button class="descargar" onclick="descargar('Olmo/16.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/17.jpg"><button class="descargar" onclick="descargar('Olmo/17.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/18.jpg"><button class="descargar" onclick="descargar('Olmo/18.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/19.jpg"><button class="descargar" onclick="descargar('Olmo/19.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/20.jpg"><button class="descargar" onclick="descargar('Olmo/20.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/21.jpg"><button class="descargar" onclick="descargar('Olmo/21.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/22.jpg"><button class="descargar" onclick="descargar('Olmo/22.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/23.jpg"><button class="descargar" onclick="descargar('Olmo/23.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/24.jpg"><button class="descargar" onclick="descargar('Olmo/24.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/25.jpg"><button class="descargar" onclick="descargar('Olmo/25.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/26.jpg"><button class="descargar" onclick="descargar('Olmo/26.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/27.jpg"><button class="descargar" onclick="descargar('Olmo/27.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/28.jpg"><button class="descargar" onclick="descargar('Olmo/28.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/29.jpg"><button class="descargar" onclick="descargar('Olmo/29.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/30.jpg"><button class="descargar" onclick="descargar('Olmo/30.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/31.jpg"><button class="descargar" onclick="descargar('Olmo/31.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/32.jpg"><button class="descargar" onclick="descargar('Olmo/32.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/33.jpg"><button class="descargar" onclick="descargar('Olmo/33.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/34.jpg"><button class="descargar" onclick="descargar('Olmo/34.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/35.jpg"><button class="descargar" onclick="descargar('Olmo/35.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/36.jpg"><button class="descargar" onclick="descargar('Olmo/36.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/37.jpg"><button class="descargar" onclick="descargar('Olmo/37.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/38.jpg"><button class="descargar" onclick="descargar('Olmo/38.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/39.jpg"><button class="descargar" onclick="descargar('Olmo/39.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/40.jpg"><button class="descargar" onclick="descargar('Olmo/40.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/41.jpg"><button class="descargar" onclick="descargar('Olmo/41.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/42.jpg"><button class="descargar" onclick="descargar('Olmo/42.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/43.jpg"><button class="descargar" onclick="descargar('Olmo/43.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/44.jpg"><button class="descargar" onclick="descargar('Olmo/44.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/45.jpg"><button class="descargar" onclick="descargar('Olmo/45.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/46.jpg"><button class="descargar" onclick="descargar('Olmo/46.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/47.jpg"><button class="descargar" onclick="descargar('Olmo/47.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/48.jpg"><button class="descargar" onclick="descargar('Olmo/48.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/49.jpg"><button class="descargar" onclick="descargar('Olmo/49.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Olmo/50.jpg"><button class="descargar" onclick="descargar('Olmo/50.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+  </div>
+  
+  <script>
+function descargar(ruta) {
+  const toast = document.getElementById('toast');
+  toast.classList.add('mostrar');
+  const a = document.createElement('a');
+  a.href = ruta;
+  a.download = ruta.split('/').pop();
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => { toast.classList.remove('mostrar'); }, 3000);
+}
+</script>
+</body>
+</html>

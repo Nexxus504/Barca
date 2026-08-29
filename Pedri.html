@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondos Pedri</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body{ padding-top: 60px; background: #001f3f; font-family: system-ui; }
+    .regresar{ position: fixed; top: 0; left: 0; width: 100%; background: #001f3f; z-index: 10; padding: 10px; }
+    .regresar a{ color: #ffc72c; text-decoration: none; }
+    .fondo{ position:relative; }
+    .descargar{ position: absolute; bottom: 8px; right:8px; background: rgba(0,0,0,0.7); color: #ffc72c; border:none; border-radius: 50%; width: 40px; height: 40px; display:flex; align-items: center; justify-content:center; cursor:pointer; z-index: 5; }
+    .material-symbols-outlined { font-size:28px; font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
+    .imagenes{ display: grid; grid-template-columns: repeat(2, 1fr); padding: 15px; gap: 12px; }
+    .fondo img{ width: 100%; height: 200px; object-fit: cover; border-radius: 15px; border: 2px solid #a50044; cursor: pointer; display: block; }
+    @media (min-width: 768px) { .imagenes{ grid-template-columns: repeat(4, 1fr); } }
+    #toast{ position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.7); color: white; padding: 12px 20px; border-radius: 12px; font-size: 18px; opacity: 0; transition: opacity 0.3s; z-index: 9999; }
+    #toast.mostrar{ opacity: 1; }
+  </style>
+</head>
+<body>
+  <div id="toast"> Fondo Descargado:)</div>
+  <div class="regresar">
+    <a href="index.html">
+      <span class="material-symbols-outlined"> arrow_back</span>
+    </a>
+  </div>
+  
+  <div class="imagenes">
+    <!-- PEDRI 1 AL 50 -->
+    <div class="fondo"><img src="Pedri/1.jpg"><button class="descargar" onclick="descargar('Pedri/1.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/2.jpg"><button class="descargar" onclick="descargar('Pedri/2.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/3.jpg"><button class="descargar" onclick="descargar('Pedri/3.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/4.jpg"><button class="descargar" onclick="descargar('Pedri/4.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/5.jpg"><button class="descargar" onclick="descargar('Pedri/5.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/6.jpg"><button class="descargar" onclick="descargar('Pedri/6.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/7.jpg"><button class="descargar" onclick="descargar('Pedri/7.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/8.jpg"><button class="descargar" onclick="descargar('Pedri/8.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/9.jpg"><button class="descargar" onclick="descargar('Pedri/9.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/10.jpg"><button class="descargar" onclick="descargar('Pedri/10.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/11.jpg"><button class="descargar" onclick="descargar('Pedri/11.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/12.jpg"><button class="descargar" onclick="descargar('Pedri/12.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/13.jpg"><button class="descargar" onclick="descargar('Pedri/13.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/14.jpg"><button class="descargar" onclick="descargar('Pedri/14.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/15.jpg"><button class="descargar" onclick="descargar('Pedri/15.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/16.jpg"><button class="descargar" onclick="descargar('Pedri/16.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/17.jpg"><button class="descargar" onclick="descargar('Pedri/17.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/18.jpg"><button class="descargar" onclick="descargar('Pedri/18.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/19.jpg"><button class="descargar" onclick="descargar('Pedri/19.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/20.jpg"><button class="descargar" onclick="descargar('Pedri/20.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/21.jpg"><button class="descargar" onclick="descargar('Pedri/21.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/22.jpg"><button class="descargar" onclick="descargar('Pedri/22.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/23.jpg"><button class="descargar" onclick="descargar('Pedri/23.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/24.jpg"><button class="descargar" onclick="descargar('Pedri/24.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/25.jpg"><button class="descargar" onclick="descargar('Pedri/25.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/26.jpg"><button class="descargar" onclick="descargar('Pedri/26.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/27.jpg"><button class="descargar" onclick="descargar('Pedri/27.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/28.jpg"><button class="descargar" onclick="descargar('Pedri/28.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/29.jpg"><button class="descargar" onclick="descargar('Pedri/29.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/30.jpg"><button class="descargar" onclick="descargar('Pedri/30.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/31.jpg"><button class="descargar" onclick="descargar('Pedri/31.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/32.jpg"><button class="descargar" onclick="descargar('Pedri/32.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/33.jpg"><button class="descargar" onclick="descargar('Pedri/33.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/34.jpg"><button class="descargar" onclick="descargar('Pedri/34.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/35.jpg"><button class="descargar" onclick="descargar('Pedri/35.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/36.jpg"><button class="descargar" onclick="descargar('Pedri/36.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/37.jpg"><button class="descargar" onclick="descargar('Pedri/37.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/38.jpg"><button class="descargar" onclick="descargar('Pedri/38.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/39.jpg"><button class="descargar" onclick="descargar('Pedri/39.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/40.jpg"><button class="descargar" onclick="descargar('Pedri/40.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/41.jpg"><button class="descargar" onclick="descargar('Pedri/41.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/42.jpg"><button class="descargar" onclick="descargar('Pedri/42.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/43.jpg"><button class="descargar" onclick="descargar('Pedri/43.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/44.jpg"><button class="descargar" onclick="descargar('Pedri/44.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/45.jpg"><button class="descargar" onclick="descargar('Pedri/45.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/46.jpg"><button class="descargar" onclick="descargar('Pedri/46.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/47.jpg"><button class="descargar" onclick="descargar('Pedri/47.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/48.jpg"><button class="descargar" onclick="descargar('Pedri/48.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/49.jpg"><button class="descargar" onclick="descargar('Pedri/49.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Pedri/50.jpg"><button class="descargar" onclick="descargar('Pedri/50.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+  </div>
+  
+  <script>
+function descargar(ruta) {
+  const toast = document.getElementById('toast');
+  toast.classList.add('mostrar');
+  const a = document.createElement('a');
+  a.href = ruta;
+  a.download = ruta.split('/').pop();
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => { toast.classList.remove('mostrar'); }, 3000);
+}
+</script>
+</body>
+</html>

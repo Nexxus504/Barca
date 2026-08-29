@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondos Leo Messi</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body{ padding-top: 60px; background: #001f3f; font-family: system-ui; }
+    .regresar{ position: fixed; top: 0; left: 0; width: 100%; background: #001f3f; z-index: 10; padding: 10px; }
+    .regresar a{ color: #ffc72c; text-decoration: none; }
+    .fondo{ position:relative; }
+    .descargar{ position: absolute; bottom: 8px; right:8px; background: rgba(0,0,0,0.7); color: #ffc72c; border:none; border-radius: 50%; width: 40px; height: 40px; display:flex; align-items: center; justify-content:center; cursor:pointer; z-index: 5; }
+    .material-symbols-outlined { font-size:28px; font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
+    .imagenes{ display: grid; grid-template-columns: repeat(2, 1fr); padding: 15px; gap: 12px; }
+    .fondo img{ width: 100%; height: 200px; object-fit: cover; border-radius: 15px; border: 2px solid #a50044; cursor: pointer; display: block; }
+    @media (min-width: 768px) { .imagenes{ grid-template-columns: repeat(4, 1fr); } }
+    #toast{ position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.7); color: white; padding: 12px 20px; border-radius: 12px; font-size: 18px; opacity: 0; transition: opacity 0.3s; z-index: 9999; }
+    #toast.mostrar{ opacity: 1; }
+  </style>
+</head>
+<body>
+  <div id="toast"> Fondo Descargado :)</div>
+  <div class="regresar">
+    <a href="index.html">
+      <span class="material-symbols-outlined"> arrow_back</span>
+    </a>
+  </div>
+  
+  <div class="imagenes">
+    <!-- MESSI 1 AL 50 -->
+    <div class="fondo"><img src="Messi/1.jpg"><button class="descargar" onclick="descargar('Messi/1.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/2.jpg"><button class="descargar" onclick="descargar('Messi/2.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/3.jpg"><button class="descargar" onclick="descargar('Messi/3.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/4.jpg"><button class="descargar" onclick="descargar('Messi/4.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/5.jpg"><button class="descargar" onclick="descargar('Messi/5.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/6.jpg"><button class="descargar" onclick="descargar('Messi/6.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/7.jpg"><button class="descargar" onclick="descargar('Messi/7.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/8.jpg"><button class="descargar" onclick="descargar('Messi/8.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/9.jpg"><button class="descargar" onclick="descargar('Messi/9.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/10.jpg"><button class="descargar" onclick="descargar('Messi/10.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/11.jpg"><button class="descargar" onclick="descargar('Messi/11.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/12.jpg"><button class="descargar" onclick="descargar('Messi/12.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/13.jpg"><button class="descargar" onclick="descargar('Messi/13.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/14.jpg"><button class="descargar" onclick="descargar('Messi/14.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/15.jpg"><button class="descargar" onclick="descargar('Messi/15.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/16.jpg"><button class="descargar" onclick="descargar('Messi/16.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/17.jpg"><button class="descargar" onclick="descargar('Messi/17.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/18.jpg"><button class="descargar" onclick="descargar('Messi/18.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/19.jpg"><button class="descargar" onclick="descargar('Messi/19.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/20.jpg"><button class="descargar" onclick="descargar('Messi/20.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/21.jpg"><button class="descargar" onclick="descargar('Messi/21.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/22.jpg"><button class="descargar" onclick="descargar('Messi/22.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/23.jpg"><button class="descargar" onclick="descargar('Messi/23.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/24.jpg"><button class="descargar" onclick="descargar('Messi/24.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/25.jpg"><button class="descargar" onclick="descargar('Messi/25.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/26.jpg"><button class="descargar" onclick="descargar('Messi/26.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/27.jpg"><button class="descargar" onclick="descargar('Messi/27.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/28.jpg"><button class="descargar" onclick="descargar('Messi/28.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/29.jpg"><button class="descargar" onclick="descargar('Messi/29.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/30.jpg"><button class="descargar" onclick="descargar('Messi/30.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/31.jpg"><button class="descargar" onclick="descargar('Messi/31.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/32.jpg"><button class="descargar" onclick="descargar('Messi/32.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/33.jpg"><button class="descargar" onclick="descargar('Messi/33.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/34.jpg"><button class="descargar" onclick="descargar('Messi/34.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/35.jpg"><button class="descargar" onclick="descargar('Messi/35.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/36.jpg"><button class="descargar" onclick="descargar('Messi/36.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/37.jpg"><button class="descargar" onclick="descargar('Messi/37.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/38.jpg"><button class="descargar" onclick="descargar('Messi/38.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/39.jpg"><button class="descargar" onclick="descargar('Messi/39.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/40.jpg"><button class="descargar" onclick="descargar('Messi/40.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/41.jpg"><button class="descargar" onclick="descargar('Messi/41.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/42.jpg"><button class="descargar" onclick="descargar('Messi/42.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/43.jpg"><button class="descargar" onclick="descargar('Messi/43.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/44.jpg"><button class="descargar" onclick="descargar('Messi/44.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/45.jpg"><button class="descargar" onclick="descargar('Messi/45.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/46.jpg"><button class="descargar" onclick="descargar('Messi/46.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/47.jpg"><button class="descargar" onclick="descargar('Messi/47.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/48.jpg"><button class="descargar" onclick="descargar('Messi/48.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/49.jpg"><button class="descargar" onclick="descargar('Messi/49.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Messi/50.jpg"><button class="descargar" onclick="descargar('Messi/50.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+  </div>
+  
+  <script>
+function descargar(ruta) {
+  const toast = document.getElementById('toast');
+  toast.classList.add('mostrar');
+  const a = document.createElement('a');
+  a.href = ruta;
+  a.download = ruta.split('/').pop();
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => { toast.classList.remove('mostrar'); }, 3000);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondos</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    padding-top: 60px;
+    background: #001f3f;
+    font-family: system-ui;
+  }
+  
+  .regresar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #001f3f;
+    z-index: 10;
+    padding: 10px;
+  }
+  
+  .regresar a{
+    color: #ffc72c;
+    text-decoration: none;
+  }
+  .fondo{
+    position:relative;
+  }
+  .descargar{
+    position: absolute;
+    bottom: 8px;
+    right:8px;
+    background: rgba(0,0,0,0.7);
+    color: #ffc72c;
+    border:none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    cursor:pointer;
+    z-index: 5;
+  }
+  
+  .material-symbols-outlined {
+    font-size:28px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+  .imagenes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en cel */
+    padding: 15px;
+    gap: 12px;
+  }
+  
+  .fondo img{
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #a50044;
+    cursor: pointer;
+    display: block;
+  }
+
+ 
+  @media (min-width: 768px) {
+    .imagenes{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  #toast{
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  color: white; 
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 9999;
+}
+#toast.mostrar{
+  opacity: 1;
+}
+  </style>
+</head>
+<body>
+  <div id="toast"> Fondo Descargado:)</div>
+  <div class="regresar">
+    <a href="index.html">
+      <span class="material-symbols-outlined"> arrow_back</span>
+    </a>
+  </div>
+  
+  <div class="imagenes">
+    <div class="fondo">
+      <img src="Raphinha/fondo1.jpg">
+      <button class="descargar" onclick="descargar('Raphinha/fondo1.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+    </div>
+    
+    <div class="fondo">
+      <img src="Raphinha/fondo2.jpg">
+      <button class="descargar" onclick="descargar('Rhapinha/fondo2.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+    </div>
+    
+    <div class="fondo">
+      <img src="Raphinha/fondo3.jpg">
+      <button class="descargar" onclick="descargar('Raphinha/fondo3.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+    </div>
+    
+    <div class="fondo">
+      <img src="Raphinha/fondo4.jpg">
+      <button class="descargar" onclick="descargar('Raphinha/fondo4.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+    </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo5.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo5.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo6.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo6.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo7.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo7.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo8.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo8.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo9.jpg" loading="lazy">
+    <button class="descargar" onclick="descargar('Raphinha/fondo9.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+    
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo10.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo10.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo11.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo11.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo12.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo12.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo13.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo13.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo14.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo14.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo15.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo15.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+ 
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo16.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo16.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo17.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo17.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo18.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo18.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo19.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo19.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+ 
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo20.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo20.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo21.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo21.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo22.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo22.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo23.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo23.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo24.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo24.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo25.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo25.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo26.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo26.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo27.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo27.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo28.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo28.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo29.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo29.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo30.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo30.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo31.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo31.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo32.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo32.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo33.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo33.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo34.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo34.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo35.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo35.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo36.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo36.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo37.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo37.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+ 
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo38.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo38.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo39.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo39.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo40.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo40.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo41.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo41.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo42.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo42.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo43.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo43.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo44.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo44.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo45.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo45.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo46.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo46.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo47.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo47.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo48.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo48.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+  <div class="fondo">
+    <img src="Raphinha/fondo49.jpg">
+    <button class="descargar" onclick="descargar('Raphinha/fondo49.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+  </div>
+  
+   <div class="fondo">
+     <img src="Raphinha/fondo50.jpg">
+     <button class="descargar" onclick="descargar('Raphinha/fondo50.jpg')">
+      <span class="material-symbols-outlined">Download</span>
+    </button>
+   </div>
+ 
+ </div>
+  
+  <script>
+function descargar(ruta) {
+  
+  const toast = document.getElementById('toast');
+  toast.classList.add('mostrar');
+
+ 
+  const a = document.createElement('a');
+  a.href = ruta;
+  a.download = ruta.split('/').pop();
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+
+ 
+  setTimeout(() => {
+    toast.classList.remove('mostrar');
+  }, 3000);
+}
+</script>
+</body>
+</html>
