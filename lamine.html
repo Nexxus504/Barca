@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondos</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body{ padding-top: 60px; background: #001f3f; font-family: system-ui; }
+    .regresar{ position: fixed; top: 0; left: 0; width: 100%; background: #001f3f; z-index: 10; padding: 10px; }
+    .regresar a{ color: #ffc72c; text-decoration: none; }
+    .fondo{ position:relative; }
+    .descargar{ position: absolute; bottom: 8px; right:8px; background: rgba(0,0,0,0.7); color: #ffc72c; border:none; border-radius: 50%; width: 40px; height: 40px; display:flex; align-items: center; justify-content:center; cursor:pointer; z-index: 5; }
+    .material-symbols-outlined { font-size:28px; font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
+    .imagenes{ display: grid; grid-template-columns: repeat(2, 1fr); padding: 15px; gap: 12px; }
+    .fondo img{ width: 100%; height: 200px; object-fit: cover; border-radius: 15px; border: 2px solid #a50044; cursor: pointer; display: block; }
+    @media (min-width: 768px) { .imagenes{ grid-template-columns: repeat(4, 1fr); } }
+    #toast{ position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.7); color: white; padding: 12px 20px; border-radius: 12px; font-size: 18px; opacity: 0; transition: opacity 0.3s; z-index: 9999; }
+    #toast.mostrar{ opacity: 1; }
+  </style>
+</head>
+<body>
+  <div id="toast"> Fondo Descargado:)</div>
+  <div class="regresar">
+    <a href="index.html"><span class="material-symbols-outlined"> arrow_back</span></a>
+  </div>
+  
+  <div class="imagenes">
+    <!-- LOS 50 FONDOS DE LAMINE -->
+    <div class="fondo"><img src="Lamine/fondo1.jpg"><button class="descargar" onclick="descargar('Lamine/fondo1.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo2.jpg"><button class="descargar" onclick="descargar('Lamine/fondo2.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo3.jpg"><button class="descargar" onclick="descargar('Lamine/fondo3.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo4.jpg"><button class="descargar" onclick="descargar('Lamine/fondo4.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo5.jpg"><button class="descargar" onclick="descargar('Lamine/fondo5.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo6.jpg"><button class="descargar" onclick="descargar('Lamine/fondo6.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo7.jpg"><button class="descargar" onclick="descargar('Lamine/fondo7.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo8.jpg"><button class="descargar" onclick="descargar('Lamine/fondo8.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo9.jpg" loading="lazy"><button class="descargar" onclick="descargar('Lamine/fondo9.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo10.jpg"><button class="descargar" onclick="descargar('Lamine/fondo10.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo11.jpg"><button class="descargar" onclick="descargar('Lamine/fondo11.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo12.jpg"><button class="descargar" onclick="descargar('Lamine/fondo12.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo13.jpg"><button class="descargar" onclick="descargar('Lamine/fondo13.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo14.jpg"><button class="descargar" onclick="descargar('Lamine/fondo14.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo15.jpg"><button class="descargar" onclick="descargar('Lamine/fondo15.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo16.jpg"><button class="descargar" onclick="descargar('Lamine/fondo16.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo17.jpg"><button class="descargar" onclick="descargar('Lamine/fondo17.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo18.jpg"><button class="descargar" onclick="descargar('Lamine/fondo18.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo19.jpg"><button class="descargar" onclick="descargar('Lamine/fondo19.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo20.jpg"><button class="descargar" onclick="descargar('Lamine/fondo20.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo21.jpg"><button class="descargar" onclick="descargar('Lamine/fondo21.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo22.jpg"><button class="descargar" onclick="descargar('Lamine/fondo22.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo23.jpg"><button class="descargar" onclick="descargar('Lamine/fondo23.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo24.jpg"><button class="descargar" onclick="descargar('Lamine/fondo24.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo25.jpg"><button class="descargar" onclick="descargar('Lamine/fondo25.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo26.jpg"><button class="descargar" onclick="descargar('Lamine/fondo26.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo27.jpg"><button class="descargar" onclick="descargar('Lamine/fondo27.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo28.jpg"><button class="descargar" onclick="descargar('Lamine/fondo28.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo29.jpg"><button class="descargar" onclick="descargar('Lamine/fondo29.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo30.jpg"><button class="descargar" onclick="descargar('Lamine/fondo30.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo31.jpg"><button class="descargar" onclick="descargar('Lamine/fondo31.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo32.jpg"><button class="descargar" onclick="descargar('Lamine/fondo32.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo33.jpg"><button class="descargar" onclick="descargar('Lamine/fondo33.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo34.jpg"><button class="descargar" onclick="descargar('Lamine/fondo34.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo35.jpg"><button class="descargar" onclick="descargar('Lamine/fondo35.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo36.jpg"><button class="descargar" onclick="descargar('Lamine/fondo36.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo37.jpg"><button class="descargar" onclick="descargar('Lamine/fondo37.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo38.jpg"><button class="descargar" onclick="descargar('Lamine/fondo38.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo39.jpg"><button class="descargar" onclick="descargar('Lamine/fondo39.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo40.jpg"><button class="descargar" onclick="descargar('Lamine/fondo40.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo41.jpg"><button class="descargar" onclick="descargar('Lamine/fondo41.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo42.jpg"><button class="descargar" onclick="descargar('Lamine/fondo42.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo43.jpg"><button class="descargar" onclick="descargar('Lamine/fondo43.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo44.jpg"><button class="descargar" onclick="descargar('Lamine/fondo44.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo45.jpg"><button class="descargar" onclick="descargar('Lamine/fondo45.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo46.jpg"><button class="descargar" onclick="descargar('Lamine/fondo46.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo47.jpg"><button class="descargar" onclick="descargar('Lamine/fondo47.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo48.jpg"><button class="descargar" onclick="descargar('Lamine/fondo48.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo49.jpg"><button class="descargar" onclick="descargar('Lamine/fondo49.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+    <div class="fondo"><img src="Lamine/fondo50.jpg"><button class="descargar" onclick="descargar('Lamine/fondo50.jpg')"><span class="material-symbols-outlined">Download</span></button></div>
+  </div>
+  
+  <script>
+  function descargar(ruta) {
+    const toast = document.getElementById('toast');
+    toast.classList.add('mostrar');
+    const a = document.createElement('a');
+    a.href = ruta;
+    a.download = ruta.split('/').pop();
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => { toast.classList.remove('mostrar'); }, 3000);
+  }
+  </script>
+</body>
+</html>
