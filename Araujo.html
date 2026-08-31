@@ -84,34 +84,18 @@
   </div>
   
   <script>
+import { Filesystem, Directory } from '@capacitor/filesystem';
+
 async function descargar(ruta) {
-  const toast = document.getElementById('toast');
-  toast.classList.add('mostrar');
-
-  try {
-    // 1. Bajamos la imagen como "blob"
-    const response = await fetch(ruta);
-    const blob = await response.blob();
-    
-    // 2. Creamos un link temporal con el blob
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = ruta.split('/').pop(); // nombre: fondo1.jpg
-    
-    // 3. Click forzado y limpieza
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    window.URL.revokeObjectURL(url);
-    
-  } catch (error) {
-    alert("Error al descargar: " + error);
-  }
-
-  setTimeout(() => {
-    toast.classList.remove('mostrar');
-  }, 3000);
+  const response = await fetch(ruta);
+  const blob = await response.blob();
+  const base64 = await blobToBase64(blob);
+  
+  await Filesystem.writeFile({
+    path: ruta.split('/').pop(),
+    data: base64,
+    directory: Directory.Downloads, // Va directo a Descargas
+  });
 }
 </script>
 </body>
